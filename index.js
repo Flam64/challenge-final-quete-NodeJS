@@ -1,12 +1,14 @@
+// index.js
+
 import { say } from 'cowsay';
 import "dotenv/config";
 
-const myName = process.env.MY_NAME;
-const myCampus = process.env.MY_CAMPUS;
+const name = process.env.NAME;
+const campus = process.env.CAMPUS;
 
 console.log(
     say({
-        text: `hello, I'm ${myName} from ${myCampus}`,
+        text: `hello, I'm ${name} from ${campus}`,
         e: "oO",
         T: "U",
     })
